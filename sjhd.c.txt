@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+struct book
+{
+	char name[20];
+	short price;
+
+};
+int main()
+{
+	struct book b1 = { "黄马",55 };
+	printf("%s\n",b1.name);
+
+
+	return 0;
+}
