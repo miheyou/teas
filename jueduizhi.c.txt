@@ -1,0 +1,38 @@
+#include<stdio.h>
+int juedui(int x, int y)
+{
+	int z = x + y;
+	if (z >= 0)
+		return z;
+	else
+		z = -z;
+
+}
+int juedui1(int x, int y)
+{
+	int z = x - y;
+	if (z >= 0)
+		return z;
+	else
+		z = -z;
+
+}
+int main()
+{
+	int a, b, c, d;
+	scanf_s("%d%d",&a,&b);
+	c = juedui(a,b);
+	d = juedui1(a, b);
+	if ((a >= 0) && (b >= 0))
+		printf("|%d+%d|=%d\n |%d-%d|=%d\n",a,b,c,a,b,d);
+	else
+		if ((a < 0) && (b >= 0))
+			printf("|(%d)+%d|=%d\n |(%d)-%d|=%d\n", a, b, c, a, b, d);
+		else
+			if((a>=0)&&(b<0))
+				printf("|%d+(%d)|=%d\n |%d-(%d)|=%d\n", a, b, c, a, b, d);
+			else
+				printf("|(%d)+(%d)|=%d\n |(%d)-(%d)|=%d\n", a, b, c, a, b, d);
+
+	return 0;
+}
