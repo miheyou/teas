@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main()
+{
+	int a = 1;
+	int b = 1;
+
+	switch (a)
+	{
+	case 1:
+		a++;
+	case 2:
+		b++;
+		switch (b)
+		{
+		case 1:
+			a++;
+		case 2:
+			b++;
+			break;
+		default:
+			break;
+
+		}
+	default:
+		break;
+		
+	}
+	printf("%d %d",a, b);
+	return 0;
+}
