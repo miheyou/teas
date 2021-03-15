@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+	int axz=0;
+	char passward[20] = { 0 };
+	printf("请输入密码\n");
+	scanf_s("%d",passward);
+	getchar();
+	axz = getchar();
+	if (axz == 'Y')
+	{
+		printf("确认成功");
+	}
+	else
+	{
+		printf("确认失败");
+	}
+
+	return 0;
+}
